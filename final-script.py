@@ -66,7 +66,7 @@ def polarizeRaster(raster_file):
 
     driver = gdal.GetDriverByName("GTiff")
     driver.Register()
-    polarized_name = "raster_polarized/" + raster_file.name.split(".tif")[0] + "-polarized.tif"
+    polarized_name = "raster_polygonized/" + raster_file.name.split(".tif")[0] + "-polarized.tif"
     outds = driver.Create(polarized_name, xsize = binmask.shape[1],
                         ysize = binmask.shape[0], bands = 1,
                         eType = gdal.GDT_Float32)

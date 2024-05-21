@@ -12,7 +12,7 @@ pip install gdal
 pip install numpy
 ```
 - Folder with raster files.
-- Folder for output files called "raster-polarized"
+- Folder for output files called "raster_polygonized"
 - Vector file (used to crop the original raster)
 
 ## How to use
